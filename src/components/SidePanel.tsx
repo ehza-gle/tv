@@ -1,32 +1,12 @@
 export default function SidePanel() {
   return (
-    <div className="sidePanel">
-      <div className="iklan">
-
+    <div className="grid grid-col-2 min-h-full w-3/12 ">
+      <div className="bg-black">
+        <h1>iklan goes here</h1>
       </div>
-      <div className="tv">
-
+      <div className="bg-yellow-400 bottom-0">
+        <h1>tv goes here</h1>
       </div>
-      <style jsx>
-        {`
-            .sidePanel {
-                margin: 0;
-                top: 0;
-                min-height : 100%;
-                min-width : 20rem;
-                
-            }
-            .iklan {
-                min-height : 100%;
-                background-color: black;
-            }
-            .tv {
-                min-height : 15rem;
-                background-color: red;
-            }
-
-        `}
-      </style>
     </div>
   );
 }

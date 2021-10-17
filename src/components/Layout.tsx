@@ -15,26 +15,6 @@ export default function Layout({ children }: Props) {
         <meta name="theme-color" content="#fff" />
       </Head>
       <main>{children}</main>
-      <style jsx>
-        {`
-          .root {
-            display: block;
-            height: 100%;
-          }
-          main {
-            min-height: 100%;
-          }
-          @media (min-width: 769px) {
-            .root {
-              display: flex;
-              flex: 1 0 auto;
-            }
-            main {
-              flex: 1 0 auto;
-            }
-          }
-        `}
-      </style>
     </div>
   );
 }
